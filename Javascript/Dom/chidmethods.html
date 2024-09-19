@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="menu">
+      <li>home</li>
+      <li>contact</li>
+      <li>followup</li>
+    </ul>
+
+    <script>
+      // clone node method() syn let newnode=originalNode.cloneNode(); this will create clone of existing node
+      let newnode = menu.cloneNode(true);
+      console.log(newnode);
+      menu.removeChild(menu.lastElementChild);
+      //   menu.remvoeChild(menu.fistElementChild);
+      // insertBefore() is used to insertbefore a new node before an existing node as a child node of a parent node
+      // syntax parentNode,insertBefore(new node, existing node);
+      //   menu.insertBefore(newnode(), menu.firstElementChild);   search this in web
+    </script>
+  </body>
+</html>

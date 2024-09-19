@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem-2</title>
+  </head>
+  <body>
+    <script>
+      //   Write a JavaScript function that takes an hour (0-23) and prints a greeting based on the time of day:
+
+      // "Good morning" for hours between 5 and 11 (inclusive)
+      // "Good afternoon" for hours between 12 and 17 (inclusive)
+      // "Good evening" for hours between 18 and 21 (inclusive)
+      // "Good night" for hours between 22 and 4 (inclusive)
+      function Clock(hour) {
+        if (hour >= 0 && hour <= 23) {
+          if (hour >= 5 && hour <= 11) {
+            document.write("Good Morning!");
+          } else if (hour >= 12 && hour <= 17) {
+            document.write("Good Afternoon");
+          } else if (hour >= 18 && hour <= 21) {
+            document.write("Good Evening");
+          } else {
+            document.write("Good night");
+          }
+        } else {
+          document.write("invaild hour");
+        }
+      }
+      Clock(4);
+    </script>
+  </body>
+</html>

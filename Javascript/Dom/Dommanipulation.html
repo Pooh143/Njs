@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom manipulation</title>
+    <style>
+      body {
+        background-color: rgb(136, 68, 88);
+      }
+      #heading-1 {
+        color: black;
+        font-size: 1.5rem;
+        background-color: rgb(99, 72, 160); /*   css part */
+        text-align: center;
+      }
+      .Para {
+        color: black;
+        background-color: rgb(134, 137, 175);
+        font-weight: bold;
+        height: 100px;
+        text-align: center;
+        padding-top: 100px;
+      }
+      .btn {
+        height: 30px;
+        width: 200px;
+        color: rgb(204, 203, 206);
+        background-color: rgb(74, 119, 142);
+        border-radius: 2px;
+        margin-left: 600px;
+      }
+      .btn-1 {
+        color: rgb(216, 54, 245);
+        background-color: burlywood;
+        margin-left: 600px;
+        border-radius: 30px;
+        height: 30px;
+        width: 200px;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1 id="heading-1">DOM IN JAVASCRIPT</h1>
+    </nav>
+    <div class="main-div">
+      <p class="Para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem
+        corporis aliquam assumenda ducimus voluptatem harum libero officia
+        nesciunt quae.
+      </p>
+      <p class="Para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem
+        corporis aliquam assumenda ducimus voluptatem harum libero officia
+        nesciunt quae.
+      </p>
+      <button type="button" class="btn">Show more..</button>
+      <button type="button" class="btn-1">FOLLOW Up</button>
+    </div>
+    <script>
+      // ---------DOM MANIPULATION------//
+      // TagName=return tag for element nodes
+      //  innerText=return the text content of the element and all its childern
+      // innerHTML=retunns the plain text or HTML content in the element
+      // textContent=returns textual content even for hidden elements
+      //   elements ke properties ko acces or change kar sakte hai
+      let txt = document.getElementById("heading-1");
+      console.log(txt.parentNode);
+      let element = document.querySelector("body");
+      console.log(element.childNodes);
+    </script>
+  </body>
+</html>

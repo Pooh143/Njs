@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function in js</title>
+  </head>
+  <body>
+    <script>
+      // terminalogies in js 1. declaration and defination of function
+      // function declaration           |                       function defination
+      //  Declares the existence of a function, ||           	Provides the actual implementation of the function, defining what the function does
+      // providing its name and parameters	               Function Definition is used to provide the actual implementation of the code which
+      // will execute every time the function is called.
+      // Function Declaration is used to let the compiler  ||        Function Definition includes the body of the function.
+      //  know about the existence of such a function so that ||
+      //  we don’t encounter any Reference Errors.	||
+      // Function Declaration does not include the body of the function.
+
+      // ------------Parameter and Argument
+      //   function greeting(str) {
+      //     console.log(`${str}`);
+      //   }
+      //   console.log(greeting("wishing you happy journey"));
+      //   Anything in function defination you pass inside this parenthesis () is a parameter .
+      //  but when you invoke/call this function actual value passsing in the function is called argument
+
+      // ---Another way to define function
+      //  const count=100;
+      //  it has a variable name count we are sayng vairable is constant having name count with value 100 its an expression
+      // similarly we can define function
+
+      const sum = function (a, b) {
+        return a + b;
+      };
+      console.log(sum(10, 20));
+    </script>
+  </body>
+</html>

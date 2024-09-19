@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulating html elements</title>
+  </head>
+  <body>
+    <ul id="menu">
+      <li>Home</li>
+      <li>Contact</li>
+      <li>SUggest</li>
+    </ul>
+    <p id="nap">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, doloribus.
+    </p>
+    <script>
+      // to create html element we use create element method()
+      //  the document.create element () accept an html tag name and return a new node with the element type .
+      let div = document.createElement("div");
+      div.className = "tittle";
+      div.innerHTML = "<p>Welcome to great stack</p>";
+
+      document.body.appendChild(div);
+
+      console.log(div);
+      //   appendChild metnod we use this method to add a node at the end of list of nodeof a speficied parent node
+      // this can be used to move existing child node to the new position within the position the document
+      // to get the text content of a node and its descandants you can use textcontent property
+      let text = document.getElementById("menu");
+      // document.write(menu.textContent);
+      // menu.textContent = "hello"; it will remove this list and it will add hello
+
+      // innerhtml is used to add text in webpage
+
+      // tagName=returns tag for element node
+      // innerText:returns the text content of the element and all its element.
+      // textContent:returns textual content even for hideen element .
+
+      //------------1.Element.tagname , Element.innerhtml , Element.innertext, Element.textContent
+      // Element.Tagname tag janna ho jab tab use karte hai
+      let skin = document.getElementById("nap").tagName;
+      console.log(skin);
+      // innerhtml hame under ka pura html de deta hai
+      let dam = (document.getElementById("nap").innerHTML = "<h1>hello</h1>");
+      console.log(dam);
+      // innertext me pura <h1> sab print hoga text k form me
+      let kid = document.getElementById("nap").innerText;
+      console.log(kid);
+      // textcontent hidden content bhi dekha deta hai
+    </script>
+  </body>
+</html>

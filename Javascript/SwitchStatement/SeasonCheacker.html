@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeasonCheacker</title>
+  </head>
+  <body>
+    <script>
+      // Season Checker:
+      // Write a program that takes a month as input (e.g., "January", "February", etc.) and
+      // uses a switch statement to print the corresponding season ("Winter", "Spring", "Summer", "Fall").
+      let month = prompt("Enter the month").toLowerCase();
+      switch (month) {
+        case "Decemeber":
+        case "January":
+        case "February":
+          document.write("Winter");
+          break;
+        case "March":
+        case "April":
+        case "May":
+          document.write("Summers");
+        case "June":
+        case "July":
+        case "August":
+          document.write("Rainy");
+          break;
+        default:
+          document.write("Spring");
+      }
+    </script>
+  </body>
+</html>

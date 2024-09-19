@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete operator</title>
+  </head>
+  <body>
+    <script>
+      // this operator removes the elements and set the value of that index to undefined //
+      // exam: let arr=[3,5,8,1]
+      // delete arr[3]; array will be 3,5,8,undefined
+      //   let arr = [10, 20, 30];
+      //   document.write(`length of arr${arr.length}<br>`);
+      //   for (x of arr) {
+      //     document.write(`${x}<br>`);
+      //   }
+      //   delete arr[2];
+      //   document.write("after deleting value <br>");
+      //   document.write(`${arr.length}<br>`);
+      //   for (x of arr) {
+      //     document.write(`${x}<br>`);
+      //   }
+      //   //   dynamic array in js
+      // In js  the arr are dynamic in nature it means that we can addthe elemenets in the array at the run time
+      // Example let num=[20,30,40];
+      // now suppose  we say :
+      // num [10]=35;
+      // this will resize array and make it of 11 elements with num[5] to num[9] set to 35
+      let arr1 = [79, 50, 60, 70, 88];
+      document.write(`length of arr:${arr1.length}<br>`);
+      for (x of arr1) {
+        document.write(`${x}<br>`);
+      }
+      arr1[6] = 100;
+      document.write(`length of arr:${arr1.length}`);
+      for (x of arr1) {
+        document.write(`${x}<br>`);
+      }
+    </script>
+  </body>
+</html>

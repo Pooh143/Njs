@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <script>
+      // Simple Calculator:
+      // Write a program that asks the user to input two numbers and an operator (+, -, *, /).
+      //  Use a switch statement to perform the corresponding arithmetic operation and display the result.
+      let num1 = Number(prompt("Enter 1 number"));
+      let num2 = Number(prompt("Enter  2 number"));
+      let operator = prompt("+,-,/,%:");
+      switch (operator) {
+        case "+":
+          document.write(
+            ` num1 is :${num1}, num2 is ${num2},result ${num1 + num2}`
+          );
+          break;
+        case "-":
+          document.write(`result ${num1 - num2}`);
+          break;
+        case "/":
+          document.write(`result ${num1 / num2}`);
+          break;
+        case "%":
+          document.write(`result ${num1 % num2}`);
+          break;
+        default:
+          document.write("enter valid operator");
+      }
+    </script>
+  </body>
+</html>

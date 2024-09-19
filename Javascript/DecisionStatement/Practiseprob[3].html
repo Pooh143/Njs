@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem[3]</title>
+  </head>
+  <body>
+    <script>
+      //     Write a JavaScript function that takes an age and prints a message based on the following conditions:
+
+      // If age is less than 13, print "You are a child."
+      // If age is between 13 and 19, print "You are a teenager."
+      // If age is between 20 and 59, print "You are an adult."
+      // If age is 60 or above, print "You are a senior."
+      // Additionally, if the person is exactly 16, print "Happy Sweet 16!"
+      // If the person is exactly 50, print "Happy Golden Anniversary!"
+
+      function Age(age) {
+        if (age < 0) {
+          document.write("Invalid age");
+          return;
+        }
+
+        if (age < 13) {
+          document.write("You are a child");
+        } else if (age >= 13 && age <= 19) {
+          document.write("You are a teenager");
+        } else if (age >= 20 && age <= 59) {
+          document.write("You are an adult");
+        } else {
+          document.write("You are a senior");
+        }
+
+        if (age == 16) {
+          document.write(" Happy Sweet 16!");
+        } else if (age == 50) {
+          document.write(" Happy Golden Anniversary!");
+        }
+      }
+
+      // Test cases
+      Age(16); // Output: You are a teenager. Happy Sweet 16!
+      Age(10); // Output: You are a child
+      Age(25); // Output: You are an adult
+      Age(50); // Output: You are an adult. Happy Golden Anniversary!
+      Age(65); // Output: You are a senior
+    </script>
+  </body>
+</html>

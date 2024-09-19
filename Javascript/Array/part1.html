@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array in Js</title>
+  </head>
+  <body>
+    <script>
+      //we can create array using array literal //
+      //array in js stroes hetrogenus data
+      //array literal are writeen using [] containing aray elements separated by coma//
+      //--------Syntax---------//
+      //let <array name>=[value,value];  ex: let arr=[1,2,3];
+
+      //**********Creating Array using array literal//
+      let stud = ["rohan", "michal", "sam "];
+      document.write(`${stud}`, "<br>"); //ab document.write a line me print karega comma k sath
+
+      //another way to declare array//
+      let num = []; //let nums; considered as variable [] is literal which indicate ye array hai
+      //[] index / subscript operator
+      num[0] = 1;
+      num[1] = 2;
+      num[2] = 4;
+      document.write(`${num}`, "<br>");
+
+      //--------------------------------------------Array literal with undefined----------------------//
+      let event = ["red", , "blue", , "lime"];
+      document.write(event[1], " ", event[3], "<br>", "<br>", " ");
+      document.write(`${event.length}=length of array`, "<br>");
+
+      //++++++++++++++++++++++++++++++++++++++++++Array length property//
+      //in js array are treated as objects//
+      let arr = [1, 2, 3, 4];
+      document.write(typeof arr);
+    </script>
+  </body>
+</html>

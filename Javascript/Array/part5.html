@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Methods in Js</title>
+  </head>
+  <body>
+    <script>
+      //   push()= Adds one or more elements at the end of array and returns the new length of array
+      let fruits = ["mango", "apple"];
+      document.write(`${fruits.length}<br>`);
+      document.write(`${fruits}<br>`);
+      let newadd = fruits.push("orange");
+
+      document.write(`${newadd}<br>`);
+      document.write(`${fruits}<br>`);
+      let value = fruits.unshift("papaya"); // add elements starting of array
+      document.write(`${value}<br>`);
+      document.write(`${fruits}<br> <br><br><br>`);
+
+      //----Removing elements from array
+      //   pop():removes the last element from an array and returns that elements
+      // shift():removes the first element from an array and returns that element
+
+      let city = ["delhi", "surat", "pune", "kerela"];
+      document.write(`${city.length}<br>`);
+      document.write(`${city}<br><br>`);
+      let reEl = city.pop();
+      document.write(`removed element:${reEl}<br> <br>`);
+      document.write(`${city}<br><br>`);
+      let x = city.shift();
+      document.write(`removed element:${x}<br><br>`);
+      document.write(`${city}<br><br>`);
+
+      //   slice():changes the content of array by removing or replacing existing elements and /or adding new element
+      //  fruit(2,1)removes second element 1 element
+
+      let color = ["red", "blue", "yellow", "orange"];
+      document.write(`${color}<br><br>`);
+      color.splice(0, 1);
+      document.write(`${color}<br><br><br><br>`);
+      //given (2) it will remove all element from this index
+      let name = ["riya", "jiya", "piya", "siya"];
+      name.splice(2);
+      document.write(`${name}<br><br>`);
+
+      //   now it will replace element and add new element on given index
+      name.splice(2, 1, "poonam", "krishna");
+      document.write(`${name}<br><br>`); //2 index pe 1 element hatao uski jagah pooh add karo
+      //multiple element replace kar sakte hai
+      //fruits(0,4,"orange")
+     
+    </script>
+  </body>
+</html>

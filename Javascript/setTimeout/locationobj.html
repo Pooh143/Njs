@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>location object</title>
+  </head>
+  <body>
+    <button type="button" id="btn" onclick="fun()">redirect button</button>
+    <script>
+      // used to know current URL information
+      // redirect in another location window ka sub object hai
+      console.log(location.href); //pure url utha k deya
+      console.log(location.pathname);
+      console.log(location.protocol);
+      //redirect methods
+      function fun() {
+        window.location = "https://www.google.com";
+      }
+    </script>
+  </body>
+</html>

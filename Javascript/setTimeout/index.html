@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SetTimeout</title>
+  </head>
+  <body>
+    <button id="btn-1" type="button">Clear interval</button>
+    <script>
+      //the setTimeout method() sets a timer which executes a function or a peice of code on after the timer expired .
+      // let hello = () => {
+      //   console.log("greeting from this side");
+      // };
+      // setTimeout(hello, 5000);
+      // set Interval ye given time pe execute karega code
+      var tn = setInterval(fun, 2000);
+      function fun() {
+        console.log("happy sunday");
+      }
+      let temp = document.getElementById("btn-1");
+      temp.addEventListener("click", function () {
+        clearInterval(tn);
+      });
+    </script>
+  </body>
+</html>

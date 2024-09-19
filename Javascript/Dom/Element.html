@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+    <style>
+      body {
+        background-color: rgb(225, 194, 253);
+      }
+      #heading-1 {
+        color: black;
+        font-size: 1.5rem;
+        background-color: aqua; /*   css part */
+        text-align: center;
+      }
+      .Para {
+        color: black;
+        background-color: aquamarine;
+        font-weight: bold;
+        height: 100px;
+        text-align: center;
+        padding-top: 100px;
+      }
+      .btn {
+        height: 30px;
+        width: 200px;
+        color: rgb(209, 240, 246);
+        background-color: rgb(53, 53, 148);
+        border-radius: 2px;
+        margin-left: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1 id="heading-1">DOM IN JAVASCRIPT</h1>
+    </nav>
+    <div class="main-div">
+      <p class="Para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem
+        corporis aliquam assumenda ducimus voluptatem harum libero officia
+        nesciunt quae.
+      </p>
+      <p class="Para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rem
+        corporis aliquam assumenda ducimus voluptatem harum libero officia
+        nesciunt quae.
+      </p>
+      <button type="button" class="btn">Show more..</button>
+    </div>
+
+    <script>
+      // console.dir(window);
+      // to print child node//
+      // console.dir(document.body.childNodes);
+      //  I can change background color using js
+      // document.body.style.background = "blue"; try this out
+      // DYNAMIC CHANGES MANIPULATION
+      // DOM MANIPULATION
+      // ---SELECTING ELEMENT BY ID
+      // let variable = document.getElementById("heading-1");
+      // console.log(variable);
+      // ---SELECTING ELEMENT BY CLASS NAME
+      // let x = document.getElementsByClassName("main-div");
+      // console.log(x);
+      //------SELECTING ELEMENTS BY TAG NAME
+      // let tag = document.getElementsByTagName("p");
+      // console.log(tag);
+
+      //---SELECTING ELEMENTS QUREY RETURNS FIRST ELEMENTS
+      // document.querySelector("myid/myclass/tag");
+      // let element = document.querySelector("h1");
+      // console.log(element);
+
+      // --SELECTING ELEMENTS QUREY SELECTOR ALL RETURNS NODELIST
+      // document.querySelectorAll("myid/myclass/tag");
+      // let element = document.querySelectorAll("p");
+      // console.log(element);
+    </script>
+  </body>
+</html>
